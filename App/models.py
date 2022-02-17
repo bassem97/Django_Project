@@ -50,7 +50,7 @@ class Projet(models.Model):
     )
 
     # Many to Many
-    memebers=models.ManyToManyField(
+    members = models.ManyToManyField(
         Etudiant,
          # table association
         through='MemberShipInProject',

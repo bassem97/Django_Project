@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <h1>hello world </h1>
+        <table  border="1px solid black">
+            <tr>
+                <th>nom projet</th>
+                <th>etat</th>
+            </tr>
+            {% for p in projets  %}
+                <td>{{ p.nom_projet }}</td>
+                <td>{{ p.description }}</td>
+                <td>{{ p.est_valide }}</td>
+
+            {% endfor %}
+
+        </table>
+</body>
+</html>
